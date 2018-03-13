@@ -1,0 +1,107 @@
+﻿.game-container {
+    position:absolute;
+    width: 60%;
+    height:55%;
+    left:15%;
+    top:40%;
+  
+}
+
+.title{
+	font-size:1.5em;
+}
+
+.subtitle{
+	font-size:1em;
+}
+
+.score-board{
+	color:white;
+	margin-left:1em;
+	font-size:1.5em;"
+}
+
+.tile {
+    position:relative;
+    border: 0.2em solid blue;
+    text-align:center;
+    width:25%;
+    padding-top:10px;
+    height: 25%;
+    float:left;
+    background-color: lightgray;
+    border-radius: 1em;
+    box-shadow: 10px 10px 10px #039be5;
+    /*background-image:url("images/1.jpg");*/
+}
+    /*.tile:hover {
+         -webkit-animation: mymove 4s infinite; 
+         animation: mymove 4s infinite;
+    }*/
+
+/* Chrome, Safari, Opera */
+/*@-webkit-keyframes mymove {
+    50% {box-shadow: 10px 10px 10px yellow;
+         border: 5px solid yellow;
+    }
+}*/
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {box-shadow: 10px 10px 10px yellow;
+          border: 5px solid yellow;
+    }
+}
+
+.renderImage {
+     -webkit-animation: myRotation 100ms; /* Chrome, Safari, Opera */
+      animation: myRotation 100ms;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myRotation {
+    50% {box-shadow: 10px 10px 10px yellow;
+         border: 5px solid yellow;
+    }
+    /*2-d rotation*/
+     from{transform:rotate(90deg);}
+     to {transform:rotate(720deg);}
+
+    /*3-d rotation*/ 
+    /*100% {
+        transform: rotateY(180deg);
+    }*/
+}
+
+/* Standard syntax */
+@keyframes myRotation {
+    50% {box-shadow: 10px 10px 10px yellow;
+         border: 5px solid yellow;
+        
+    }
+    /*2-d rotation*/
+     from{transform:rotate(90deg);}
+     to {transform:rotate(720deg);}
+
+     /*3-d rotation*/ 
+    /*  100% {
+        transform: rotateY(180deg);
+    } */
+}
+
+.reset-btn {
+    color:white;
+    background-color:blue;
+    float:left;
+    background-color:blue;
+    box-shadow: 5px 5px 5px #039be5;
+    border-radius: 5px;
+    outline:none;
+	margin-left:1em;
+}
+
+    .reset-btn:active {
+        box-shadow: 3px 3px yellow;
+        border: 2px solid yellow;
+        transform: translate(2px,2px);
+    }
